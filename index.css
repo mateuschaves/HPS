@@ -128,13 +128,13 @@ header {
 .button {
 	width: 200px;
 	margin-top: 40px;
-	margin-right: auto;
-	margin-bottom: auto;
-	margin-left: auto;
+	margin-right: 20px;
+	margin-bottom: 40px;
+	margin-left: 20px;
 	padding-top: 20px;
-	padding-right: 10px;
+	/* padding-right: 10px; */
 	padding-bottom: 20px;
-	padding-left: 10px;
+	/* padding-left: 10px; */
 	text-align: center;
 	vertical-align: middle;
 	border-radius: 0px;
@@ -144,6 +144,7 @@ header {
 	border: 3px solid #FFFFFF;
 	color: #FFFFFF;
 	transition: all 0.3s linear;
+	text-decoration: none;
 }
 .button:hover {
 	background-color: #6DC7D0;
@@ -180,6 +181,26 @@ footer {
 	text-align: left;
 	padding-left: 20px;
 	padding-right: 20px;
+}
+
+.footer_buttons {
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+}
+
+.input {
+	border: 1px solid #D95B0B;
+    border-radius: 8px;
+    height: 20px;
+    width: 300px;
+    padding: 8px;
+}
+
+.input:focus {
+	border: 2px solid #D95B0B;
+	outline: none;
 }
 
 /* Mobile */
@@ -266,18 +287,18 @@ footer {
 
 /* Small Desktops */
 @media (min-width: 768px) and (max-width: 1096px) {
-.text_column {
-	width: 100%;
-}
-.thumbnail {
-	width: 48%;
-}
-.text_column {
-	width: 90%;
-	margin: 0;
-	padding: 20px;
-}
-.intro .column p {
-	width: 80%;
-}
+	.text_column {
+		width: 100%;
+	}
+	.thumbnail {
+		width: 48%;
+	}
+	.text_column {
+		width: 90%;
+		margin: 0;
+		padding: 20px;
+	}
+	.intro .column p {
+		width: 80%;
+	}
 }

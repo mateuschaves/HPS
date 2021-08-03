@@ -1,0 +1,59 @@
+<!--HSP primeira versão-->
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Cadastro de Apartamento</title>
+<link href="../../index.css" rel="stylesheet" type="text/css">
+<link href="./cadastro.css" rel="stylesheet" type="text/css">
+
+<script src="./cadastro.js"></script>
+
+</head>
+<body>
+<!-- container cria os blocos -->
+<div class="container"> 
+ 
+  <header class="header">
+    <h1 class="logo">Cadastrar imóvel</h1>
+  </header>
+
+  <form class="form">
+    <div class="grid-form">
+        <input type="text" class="input" name="building" placeholder="Dê um nome para o seu cafofo =)" maxlength="100" minlength="5" required/>
+        <input type="text" class="input" name="owner" placeholder="Nome do proprietário" maxlength="50" minlength="3" required />
+        <input type="tel" class="input" name="contact" placeholder="Contato do proprietário" required />
+        <div class="form-group">
+            <label for="description">Descreva com datelhes o seu cafofo</label>
+            <div>
+                <textarea class="input" placeholder="Descreva aqui" name="description" required minlength="50" maxlength="250" id="description"></textarea>
+            </div>
+        </div>
+        <input type="number" class="input" onchange="onCepChange(this.value)" name="cep" placeholder="CEP" required>
+        <input type="text" class="input" id="street" name="street" placeholder="Nome da rua" required>
+        <input type="text" class="input" id="city" name="city" placeholder="Cidade" required>
+        <input type="text" class="input" id="state" name="state" placeholder="Estado" required>
+        <input type="text" class="input" id="neighborhood" name="neighborhood" placeholder="Bairro" required>
+        <input type="text" class="input" id="number" name="number" placeholder="Número do imóvel" required>
+        <input type="text" class="input" id="reference_point" name="reference_point" placeholder="Ponto de referência" required>
+        <div class="form-group">
+            <label for="furniture">Mobiliado</label>
+            <fieldset class="input select" id="furniture">
+                <input type="radio" class="radio" value="Sim" name="furniture">Sim<br>
+                <input type="radio" class="radio" value="Não" name="furniture">Não<br>
+            </fieldset>
+        </div>
+        <input class="input" type="number" name="price" placeholder="Valor do aluguel" required/>
+    </div>
+    <button class="button" type="submit">Cadastrar</button>
+  </form>
+
+  <!-- Copyrights Section -->
+  <div class="copyright">&copy;2021 - <strong>OZTOPADOZ</strong></div>
+</div>
+<!-- Main Container Ends -->
+
+</body>
+</html>
