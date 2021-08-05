@@ -194,7 +194,8 @@ footer {
 	border: 1px solid #D95B0B;
     border-radius: 8px;
     height: 20px;
-    width: 300px;
+    width: 20vw;
+	max-width: 300px;
     padding: 8px;
 }
 
